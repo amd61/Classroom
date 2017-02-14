@@ -21,6 +21,14 @@ public class Classroom{
     student.add(person);
   }
 
+  public boolean classroomIsFull(){
+    if (student.size() >= 16) {
+      return true;
+    }
+    else {
+    return false;
+  }
   
+  }
 
 }

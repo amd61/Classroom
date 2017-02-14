@@ -36,6 +36,13 @@ public class ClassroomTest{
     assertEquals(1, classroom.classCount());
   }
 
+  @Test
+  public void isClassRoomFull(){
+    for(int i = 0; i<20; i++){
+      classroom.enrolNewStudent(john);
+    }
+    assertEquals(true, classroom.classroomIsFull());
+  }
 
   
 }
